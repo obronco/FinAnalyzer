@@ -35,7 +35,7 @@ public class DataCollector {
 
 	public Map<String, String> getData(String ticker) {
 		try {
-			URL url = new URL("http://finance.yahoo.com/d/quotes.csv?s="
+			URL url = new URL("http://download.finance.yahoo.com/d/quotes.csv?s="
 					+ ticker + "&f=b4c1jj1j5k2r2yaba2enrsp6xkp5");
 			Scanner s = new Scanner(url.openStream());
 
